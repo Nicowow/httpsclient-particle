@@ -18,6 +18,7 @@ const int g_port = 443; // Don't change this, unless you know what you are doing
 static unsigned int freemem;
 bool g_https_complete;
 uint32 g_bytes_received;
+unsigned char *received_msg;
 
 TCPClient client;
 
@@ -75,7 +76,7 @@ void loop() {
   }
   int rc;
   httpsclientSetPath(se_endpoint);
-  if ((rc = httpsClientConnection(httpRequestContent, bufsize, jsonBuf)) < 0) {
+  if ((rc = httpsClientConnection(httpRequestContent, bufsize, jsonBuf,received_msg)) < 0) {
     // TODO: When massive FAIL
     if (g_https_trace) {
       Serial.print("httpsClientConnection Returned ");
