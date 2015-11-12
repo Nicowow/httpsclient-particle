@@ -26,7 +26,7 @@ unsigned char *CAstream;
 tlsExtension_t *extension;
 int32 len, sessionFlag, extLen;
 ssl_t *ssl;
-unsigned char *g_buf, *ext;*received_msg;
+unsigned char *g_buf, *ext, *received_msg;
 sslSessOpts_t options;
 
 const int g_key_len = 2048;
