@@ -20,6 +20,7 @@ extern "C" {
 extern TCPClient client;
 extern bool g_https_complete;
 extern uint32 g_bytes_received;
+extern String httpMessage;
 extern const bool g_https_trace;
 
 int httpsclientSetup(const char * host, const char * path);
