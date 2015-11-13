@@ -1,6 +1,7 @@
 #pragma once
 
 #include "application.h"
+#include "spark_wiring_string.h"
 
 #ifdef __cplusplus
 extern "C" {
