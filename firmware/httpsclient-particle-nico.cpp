@@ -318,7 +318,7 @@ static int32 TCPRead (int len) {
 }
 
 int httpsClientConnection(unsigned char * requestContent, uint32 msg_len,
-			  const char * message,char[] * received_msg) {
+			  const char * message,unsigned char * received_msg) {
   int32 rc, len, transferred;
   g_httpRequestHdr = requestContent;
 
@@ -458,7 +458,7 @@ int httpsClientConnection(unsigned char * requestContent, uint32 msg_len,
     if (g_https_trace) {
       for (int i = 0 ; i < len; i++) {
 	Serial.print((char)g_buf[i]);
-	received_msg[i] = (char)g_buf[i];
+	received_msg += g_buf[i];
       }
       Serial.println();
     }
