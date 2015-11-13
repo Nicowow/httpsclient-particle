@@ -458,7 +458,7 @@ int httpsClientConnection(unsigned char * requestContent, uint32 msg_len,
     if (g_https_trace) {
       for (int i = 0 ; i < len; i++) {
 	Serial.print((char)g_buf[i]);
-	received_msg += (char)g_buf[i];
+	httpMessage.concat((char)g_buf[i])
       }
       Serial.println();
     }
