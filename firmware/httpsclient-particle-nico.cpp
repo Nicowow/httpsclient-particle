@@ -318,7 +318,7 @@ static int32 TCPRead (int len) {
 }
 
 int httpsClientConnection(unsigned char * requestContent, uint32 msg_len,
-			  const char * message,unsigned char * received_msg) {
+			  const char * message) {
   int32 rc, len, transferred;
   g_httpRequestHdr = requestContent;
 
