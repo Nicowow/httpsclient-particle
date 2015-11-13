@@ -262,8 +262,8 @@ extern "C" {
 	To completely disable rehandshaking comment out all three of these defines
 */
 /* #define ENABLE_SECURE_REHANDSHAKES */
-/* #define REQUIRE_SECURE_REHANDSHAKES */
-#define ENABLE_INSECURE_REHANDSHAKES /* @security NOT RECOMMENDED */
+#define REQUIRE_SECURE_REHANDSHAKES
+/*#define ENABLE_INSECURE_REHANDSHAKES */ /* @security NOT RECOMMENDED */
 
 /******************************************************************************/
 /*
