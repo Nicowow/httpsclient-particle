@@ -63,60 +63,60 @@ extern "C" {
 
 #define USE_TLS_RSA_WITH_AES_128_CBC_SHA
 #define USE_TLS_RSA_WITH_AES_256_CBC_SHA
-/*#define USE_TLS_RSA_WITH_AES_128_CBC_SHA256 /* TLS 1.2 */
-/*#define USE_TLS_RSA_WITH_AES_256_CBC_SHA256 /* TLS 1.2 */
-/*#define USE_TLS_RSA_WITH_AES_128_GCM_SHA256  /* TLS 1.2 */
-/*#define USE_TLS_RSA_WITH_AES_256_GCM_SHA384 /* TLS 1.2 */
+#define USE_TLS_RSA_WITH_AES_128_CBC_SHA256 /* TLS 1.2 */
+#define USE_TLS_RSA_WITH_AES_256_CBC_SHA256 /* TLS 1.2 */
+/* #define USE_TLS_RSA_WITH_AES_128_GCM_SHA256 */ /* TLS 1.2 */
+/* #define USE_TLS_RSA_WITH_AES_256_GCM_SHA384 */ /* TLS 1.2 */
 
 /* Pre-Shared Key Ciphers */
-/*#define USE_TLS_PSK_WITH_AES_256_CBC_SHA /*
-/*#define USE_TLS_PSK_WITH_AES_128_CBC_SHA /*
-/*#define USE_TLS_PSK_WITH_AES_256_CBC_SHA384 /*TLS 1.2 */
-/*#define USE_TLS_PSK_WITH_AES_128_CBC_SHA256 /* TLS 1.2 */
+/* #define USE_TLS_PSK_WITH_AES_256_CBC_SHA */
+/* #define USE_TLS_PSK_WITH_AES_128_CBC_SHA */
+/* #define USE_TLS_PSK_WITH_AES_256_CBC_SHA384 */ /* TLS 1.2 */
+/* #define USE_TLS_PSK_WITH_AES_128_CBC_SHA256 */ /* TLS 1.2 */
 
 /* Ephemeral ECC DH keys, ECC DSA certificates */
-/*#define USE_TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA /*
-/*#define USE_TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA /*
-/*#define USE_TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 /* TLS 1.2 */
-/*#define USE_TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 /* TLS 1.2 */
-/*#define USE_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 /* TLS 1.2 */
-/*#define USE_TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 /* TLS 1.2 */
+/* #define USE_TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA */
+/* #define USE_TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA */
+/* #define USE_TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 */ /* TLS 1.2 */
+/* #define USE_TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 */ /* TLS 1.2 */
+/* #define USE_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 */ /* TLS 1.2 */
+/* #define USE_TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 */ /* TLS 1.2 */
 
 /* Ephemeral ECC DH keys, RSA certificates */
-/*#define USE_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA /*
-/*#define USE_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA /*
-/*#define USE_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 /* TLS 1.2 */
-/*#define USE_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 /* TLS 1.2 */
-/*#define USE_TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 /* TLS 1.2 */
-/*#define USE_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 /* TLS 1.2 */
+/* #define USE_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA */
+/* #define USE_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA */
+/* #define USE_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 */ /* TLS 1.2 */
+/* #define USE_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 */ /* TLS 1.2 */
+/* #define USE_TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 */ /* TLS 1.2 */
+/* #define USE_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 */ /* TLS 1.2 */
 
 /* Non-Ephemeral ECC DH keys, ECC DSA certificates */
-/*#define USE_TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA /*
-/*#define USE_TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA /*
-/*#define USE_TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256 /* TLS 1.2 */
-/*#define USE_TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384 /* TLS 1.2 */
-/*#define USE_TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256 /* TLS 1.2 */
-/*#define USE_TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384 /* TLS 1.2 */
+/* #define USE_TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA */
+/* #define USE_TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA */
+/* #define USE_TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256 */ /* TLS 1.2 */
+/* #define USE_TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384 */ /* TLS 1.2 */
+/* #define USE_TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256 */ /* TLS 1.2 */
+/* #define USE_TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384 */ /* TLS 1.2 */
 
 /* Non-Ephemeral ECC DH keys, RSA certificates */
-/*#define USE_TLS_ECDH_RSA_WITH_AES_256_CBC_SHA /*
-/*#define USE_TLS_ECDH_RSA_WITH_AES_128_CBC_SHA /*
-/*#define USE_TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384  /* TLS 1.2 */
-/*#define USE_TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256  /* TLS 1.2 */
-/*#define USE_TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384  /* TLS 1.2 */
-/*#define USE_TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256  /* TLS 1.2 */
+/* #define USE_TLS_ECDH_RSA_WITH_AES_256_CBC_SHA */
+/* #define USE_TLS_ECDH_RSA_WITH_AES_128_CBC_SHA */
+/* #define USE_TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384 */ /* TLS 1.2 */
+/* #define USE_TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256 */ /* TLS 1.2 */
+/* #define USE_TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384 */ /* TLS 1.2 */
+/* #define USE_TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256 */ /* TLS 1.2 */
 
 /******************************************************************************/
 /*
 	These cipher suites are secure, but not in general use. Enable only if 
 	specifically required by application.
 */
-/*#define USE_TLS_DHE_PSK_WITH_AES_256_CBC_SHA /*
-/*#define USE_TLS_DHE_PSK_WITH_AES_128_CBC_SHA /*
-/*#define USE_TLS_DHE_RSA_WITH_AES_256_CBC_SHA /*
-/*#define USE_TLS_DHE_RSA_WITH_AES_128_CBC_SHA /*
-/*#define USE_TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 /* TLS 1.2 */
-/*#define USE_TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 /* TLS 1.2 */
+/* #define USE_TLS_DHE_PSK_WITH_AES_256_CBC_SHA */
+/* #define USE_TLS_DHE_PSK_WITH_AES_128_CBC_SHA */
+/* #define USE_TLS_DHE_RSA_WITH_AES_256_CBC_SHA */
+/* #define USE_TLS_DHE_RSA_WITH_AES_128_CBC_SHA */
+/* #define USE_TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 */ /* TLS 1.2 */
+/* #define USE_TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 */ /* TLS 1.2 */
 
 /******************************************************************************/
 /*
@@ -155,8 +155,8 @@ extern "C" {
 		you don't want to use that version disable the USE_TLS_ define instead
 */
 #define USE_TLS			/* TLS 1.0 aka SSL 3.1 */
-/* #define USE_TLS_1_1 */
-/* #define USE_TLS_1_2 */
+#define USE_TLS_1_1
+#define USE_TLS_1_2
 /* #define DISABLE_TLS_1_1 */
 /* #define DISABLE_TLS_1_0 */
 #define DISABLE_SSLV3	/* Disable SSL 3.0 */
@@ -263,7 +263,7 @@ extern "C" {
 */
 /* #define ENABLE_SECURE_REHANDSHAKES */
 #define REQUIRE_SECURE_REHANDSHAKES
-/*#define ENABLE_INSECURE_REHANDSHAKES */ /* @security NOT RECOMMENDED */
+/* #define ENABLE_INSECURE_REHANDSHAKES */ /* @security NOT RECOMMENDED */
 
 /******************************************************************************/
 /*
@@ -390,4 +390,3 @@ extern "C" {
 
 #endif /* _h_MATRIXCONFIG */
 /******************************************************************************/
-
