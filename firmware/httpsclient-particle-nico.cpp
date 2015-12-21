@@ -458,10 +458,12 @@ int httpsClientConnection(unsigned char * requestContent, uint32 msg_len,
     if (g_https_trace) {
       for (int i = 0 ; i < len; i++) {
 	Serial.print((char)g_buf[i]);
-	httpMessage.concat((char)g_buf[i]);
       }
       Serial.println();
     }
+    for (int i = 0 ; i < len; i++) {
+	httpMessage.concat((char)g_buf[i]);
+      }
     if (!g_https_complete) {
       if (strstr((const char *) g_buf, end_header)) {
 	g_https_complete = true;
